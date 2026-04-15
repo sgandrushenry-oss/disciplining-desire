@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Discipline</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, serif;
+      background: linear-gradient(to bottom, #101010 0%, #161616 45%, #0c0c0c 100%);
+      color: #f4f1ea;
+      padding: 60px;
+      line-height: 1.75;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h1 {
+      font-weight: normal;
+      margin-bottom: 35px;
+      letter-spacing: 0.02em;
+    }
+
+    .intro {
+      max-width: 760px;
+      margin-bottom: 45px;
+      color: #d9d3ca;
+      font-size: 1.08rem;
+    }
+
+    .system-list {
+      margin: 45px 0;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(240px, 1fr));
+      gap: 18px;
+    }
+
+    .system-item {
+      border: 1px solid #3f3f3f;
+      padding: 18px 20px;
+      background: rgba(255,255,255,0.025);
+      transition: background 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .system-item:hover {
+      background: rgba(255,255,255,0.055);
+      border-color: #7a7a7a;
+      transform: translateY(-2px);
+    }
+
+    .label {
+      font-size: 0.95rem;
+      color: #bba999;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 8px;
+    }
+
+    .term {
+      font-size: 1.1rem;
+      margin-bottom: 8px;
+    }
+
+    .desc {
+      color: #cfc7bc;
+      font-size: 0.98rem;
+    }
+
+    .statement {
+      margin: 55px 0;
+      padding: 26px 28px;
+      border: 1px solid #4a4a4a;
+      background: rgba(255,255,255,0.03);
+      font-size: 1.15rem;
+      line-height: 1.9;
+    }
+
+    .statement .small {
+      margin-top: 10px;
+      font-size: 0.95rem;
+      color: #a89c90;
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin: 50px 0 60px 0;
+    }
+
+    .column {
+      padding: 22px;
+      border-left: 2px solid #6a584d;
+      background: rgba(255,255,255,0.02);
+    }
+
+    .column h2 {
+      margin-top: 0;
+      font-weight: normal;
+      font-size: 1.05rem;
+      color: #e5d4c6;
+    }
+
+    .column p {
+      color: #d7cdc2;
+      margin-bottom: 0;
+    }
+
+    .fragment {
+      margin: 32px 0;
+      position: relative;
+      padding-left: 12px;
+      border-left: 1px solid #333;
+    }
+
+    .fragment .overlay {
+      display: block;
+      margin-top: 8px;
+      color: #9e9286;
+      opacity: 0;
+      transform: translateY(5px);
+      transition: opacity 0.45s ease, transform 0.45s ease;
+    }
+
+    .fragment:hover .overlay {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      margin-top: 70px;
+      flex-wrap: wrap;
+    }
+
+    a {
+      color: #f4f1ea;
+      text-decoration: none;
+      border-bottom: 1px solid #f4f1ea;
+      padding-bottom: 3px;
+    }
+
+    a:hover {
+      opacity: 0.65;
+    }
+
+    @media (max-width: 760px) {
+      body {
+        padding: 30px;
+      }
+
+      .system-list,
+      .split {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <h1>Discipline</h1>
+
+    <div class="intro">
+      Graduate education does not eliminate desire.
+      It organizes it.
+      It channels intensity into forms the institution can recognize, measure, reward, and contain.
+      Discipline is how desire becomes legible.
+    </div>
+
+    <div class="system-list">
+      <div class="system-item">
+        <div class="label">timeline</div>
+        <div class="term">On time</div>
+        <div class="desc">Progress is measured against institutional tempo, not lived reality.</div>
+      </div>
+
+      <div class="system-item">
+        <div class="label">evaluation</div>
+        <div class="term">Legibility</div>
+        <div class="desc">To be recognized, work must appear in familiar, countable forms.</div>
+      </div>
+
+      <div class="system-item">
+        <div class="label">professionalization</div>
+        <div class="term">Performance</div>
+        <div class="desc">Students are taught not only what to know, but how to appear.</div>
+      </div>
+
+      <div class="system-item">
+        <div class="label">productivity</div>
+        <div class="term">Output</div>
+        <div class="desc">Writing becomes deliverable, measurable, and increasingly time-bound.</div>
+      </div>
+
+      <div class="system-item">
+        <div class="label">self-management</div>
+        <div class="term">Optimization</div>
+        <div class="desc">Students are asked to regulate themselves before the institution has to.</div>
+      </div>
+
+      <div class="system-item">
+        <div class="label">belonging</div>
+        <div class="term">Assimilation</div>
+        <div class="desc">Difference is welcomed rhetorically, but not always structurally.</div>
+      </div>
+    </div>
+
+    <div class="statement">
+      The system does not say: do not desire.  
+      It says: desire this instead.
+      <div class="small">
+        Publish this. Value this. Become this. Survive like this.
+      </div>
+    </div>
+
+    <div class="split">
+      <div class="column">
+        <h2>What discipline promises</h2>
+        <p>
+          Clarity. Direction. Recognition. A path forward.
+          The sense that if you do the right things in the right order, you will arrive.
+        </p>
+      </div>
+
+      <div class="column">
+        <h2>What discipline conceals</h2>
+        <p>
+          Uneven access. Exhaustion. Tacit rules. Deferred security.
+          The labor of learning how to survive systems that call themselves neutral.
+        </p>
+      </div>
+    </div>
+
+    <div class="fragment">
+      Graduate students are taught to manage contradiction quietly.
+      <span class="overlay">To appear coherent even while living in uncertainty.</span>
+    </div>
+
+    <div class="fragment">
+      They are encouraged to be passionate.
+      <span class="overlay">But passion must remain professional, productive, and properly scaled.</span>
+    </div>
+
+    <div class="fragment">
+      They are told to develop a scholarly identity.
+      <span class="overlay">Yet that identity must still pass through inherited norms, genres, and expectations.</span>
+    </div>
+
+    <div class="fragment">
+      Discipline works not only through rules.
+      <span class="overlay">It works through repetition, aspiration, evaluation, and the desire to belong.</span>
+    </div>
+
+    <div class="fragment">
+      What looks like preparation is often also containment.
+      <span class="overlay">What looks like guidance is sometimes a narrowing of what can still be imagined.</span>
+    </div>
+
+    <div class="nav">
+      <a href="desire.html">← Back to Desire</a>
+      <a href="liminality.html">Continue to Liminality →</a>
+    </div>
+
+  </div>
+</body>
+</html>
