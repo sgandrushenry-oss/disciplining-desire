@@ -94,7 +94,11 @@
       font-size: 1.15rem;
       line-height: 1.8;
     }
-
+<div class="quote-block">
+  Stable enough to labor.  
+  Unstable enough to be denied security.
+  <div class="small">Hover and contradiction structure the page because contradiction structures the subject.</div>
+</div>
     .small {
       color: #9a9a9a;
       font-size: 0.95rem;
@@ -119,7 +123,73 @@
     a:hover {
       opacity: 0.65;
     }
+.art-section {
+  margin: 60px 0;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 26px;
+  align-items: stretch;
+}
 
+.art-main,
+.art-side,
+.art-pair,
+.art-detail {
+  border: 1px dashed rgba(255,255,255,0.24);
+  background: rgba(255,255,255,0.025);
+  padding: 24px;
+  color: #c8beb2;
+}
+
+.art-main {
+  min-height: 300px;
+}
+
+.art-side {
+  min-height: 300px;
+}
+
+.art-pair-wrap {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+}
+
+.art-pair,
+.art-detail {
+  min-height: 130px;
+}
+
+.art-section h2,
+.art-main h2,
+.art-side h2,
+.art-pair h2,
+.art-detail h2 {
+  margin-top: 0;
+  font-size: 1rem;
+  font-weight: normal;
+  color: #eadbcc;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.art-section p,
+.art-main p,
+.art-side p,
+.art-pair p,
+.art-detail p {
+  margin-bottom: 0;
+}
+
+@media (max-width: 820px) {
+  .art-section {
+    grid-template-columns: 1fr;
+  }
+
+  .art-pair-wrap {
+    grid-template-rows: auto;
+  }
+}
     @media (max-width: 700px) {
       body {
         padding: 30px;
@@ -184,7 +254,36 @@
       They are told to become.
       <span class="overlay">But not always given the conditions that make becoming livable.</span>
     </div>
+<div class="art-section">
+  <div class="art-main">
+    <h2>Paired image placeholder</h2>
+    <p>
+      Add one larger image or collage here that stages contradiction:
+      formal/institutional versus intimate/personal,
+      polished/professional versus lived/unfinished,
+      classroom versus hallway,
+      badge versus hand, desk versus body, file versus memory.
+    </p>
+  </div>
 
+  <div class="art-pair-wrap">
+    <div class="art-pair">
+      <h2>Institutional side</h2>
+      <p>
+        Good place for office, desk, syllabus, ID badge, email screenshot,
+        checklist, grading object, or administrative texture.
+      </p>
+    </div>
+
+    <div class="art-detail">
+      <h2>Personal side</h2>
+      <p>
+        Good place for notebook, bag, keys, coffee cup, hands, family trace,
+        or another intimate object that complicates the official image.
+      </p>
+    </div>
+  </div>
+</div>
     <div class="fragment">
       They are expected to know.
       <span class="overlay">Even while learning remains partial, deferred, and in motion.</span>
