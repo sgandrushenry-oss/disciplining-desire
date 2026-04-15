@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Desire</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, serif;
+      background: radial-gradient(circle at top, #1a1212 0%, #0f0f10 55%, #090909 100%);
+      color: #f5f1eb;
+      padding: 60px;
+      line-height: 1.75;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: auto;
+      position: relative;
+    }
+
+    h1 {
+      font-weight: normal;
+      margin-bottom: 35px;
+      letter-spacing: 0.02em;
+    }
+
+    .intro {
+      max-width: 720px;
+      margin-bottom: 45px;
+      color: #ddd2c7;
+      font-size: 1.08rem;
+    }
+
+    .floating-word {
+      position: absolute;
+      color: rgba(255, 235, 215, 0.08);
+      font-size: 2.2rem;
+      pointer-events: none;
+      user-select: none;
+      letter-spacing: 0.04em;
+    }
+
+    .w1 { top: 110px; right: 40px; }
+    .w2 { top: 330px; left: -10px; }
+    .w3 { top: 690px; right: 80px; }
+    .w4 { top: 980px; left: 40px; }
+
+    .fragment {
+      margin: 38px 0;
+      max-width: 700px;
+      position: relative;
+    }
+
+    .fragment p {
+      margin: 0;
+      font-size: 1.08rem;
+    }
+
+    .reveal {
+      display: block;
+      margin-top: 10px;
+      color: #b7a89a;
+      opacity: 0;
+      transform: translateY(6px);
+      transition: opacity 0.45s ease, transform 0.45s ease;
+    }
+
+    .fragment:hover .reveal {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .center-piece {
+      margin: 55px 0;
+      padding: 26px 28px;
+      border-left: 2px solid #7e6155;
+      background: rgba(255,255,255,0.03);
+      max-width: 760px;
+      font-size: 1.15rem;
+      line-height: 1.9;
+    }
+
+    .small {
+      color: #aa998d;
+      font-size: 0.95rem;
+      margin-top: 10px;
+    }
+
+    .pull-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 22px;
+      margin: 50px 0 60px 0;
+    }
+
+    .pull-box {
+      border: 1px solid rgba(255,255,255,0.16);
+      padding: 22px;
+      background: rgba(255,255,255,0.025);
+      min-height: 160px;
+      transition: background 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .pull-box:hover {
+      background: rgba(255,255,255,0.055);
+      border-color: rgba(255,255,255,0.35);
+      transform: translateY(-2px);
+    }
+
+    .pull-box h2 {
+      margin-top: 0;
+      font-size: 1.05rem;
+      font-weight: normal;
+      color: #f2dfd1;
+    }
+
+    .pull-box p {
+      color: #d9cdc2;
+      margin-bottom: 0;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      margin-top: 70px;
+      flex-wrap: wrap;
+    }
+
+    a {
+      color: #f5f1eb;
+      text-decoration: none;
+      border-bottom: 1px solid #f5f1eb;
+      padding-bottom: 3px;
+    }
+
+    a:hover {
+      opacity: 0.65;
+    }
+
+    @media (max-width: 760px) {
+      body {
+        padding: 30px;
+      }
+
+      .pull-section {
+        grid-template-columns: 1fr;
+      }
+
+      .floating-word {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="floating-word w1">want</div>
+    <div class="floating-word w2">becoming</div>
+    <div class="floating-word w3">pursue</div>
+    <div class="floating-word w4">survive</div>
+
+    <h1>Desire</h1>
+
+    <div class="intro">
+      Graduate education does not only shape what students know.
+      It also shapes what they come to want, pursue, fear, and imagine as possible.
+      Desire is not outside the institution. It is cultivated within it.
+    </div>
+
+    <div class="fragment">
+      <p>You arrive wanting something.</p>
+      <span class="reveal">To write. To think. To become. To make a life around ideas.</span>
+    </div>
+
+    <div class="fragment">
+      <p>The institution needs that desire.</p>
+      <span class="reveal">It depends on intensity, commitment, hope, endurance, and attachment.</span>
+    </div>
+
+    <div class="fragment">
+      <p>But desire does not remain untouched.</p>
+      <span class="reveal">It is redirected toward metrics, timelines, productivity, and legibility.</span>
+    </div>
+
+    <div class="center-piece">
+      Graduate students are asked to desire intensely—
+      to write obsessively, think passionately, and dedicate themselves to intellectual life—
+      while also being warned against excess, instability, or deviation.
+      <div class="small">The system needs drive, but not too much freedom.</div>
+    </div>
+
+    <div class="pull-section">
+      <div class="pull-box">
+        <h2>What draws you in</h2>
+        <p>
+          Curiosity. Thought. Recognition. A project. A future.
+          The hope that intellectual life might still be a way of living.
+        </p>
+      </div>
+
+      <div class="pull-box">
+        <h2>What desire becomes</h2>
+        <p>
+          Output. Professionalization. Self-management. Optimization.
+          The slow redirection of longing into institutional form.
+        </p>
+      </div>
+    </div>
+
+    <div class="fragment">
+      <p>You begin to want what the discipline rewards.</p>
+      <span class="reveal">Even when it narrows what you once thought possible.</span>
+    </div>
+
+    <div class="fragment">
+      <p>And still, something exceeds capture.</p>
+      <span class="reveal">A question that will not quiet down. A project that keeps widening. A force that resists being reduced to output.</span>
+    </div>
+
+    <div class="fragment">
+      <p>Desire is not a flaw in the system.</p>
+      <span class="reveal">It is one of the conditions that makes intellectual life possible.</span>
+    </div>
+
+    <div class="nav">
+      <a href="produced-subjects.html">← Back to Produced Subjects</a>
+      <a href="discipline.html">Continue to Discipline →</a>
+    </div>
+
+  </div>
+</body>
+</html>
